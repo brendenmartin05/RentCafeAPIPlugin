@@ -1,0 +1,130 @@
+.herocreative-rentcafe-tabs {
+  min-height: 500px;
+}
+
+.herocreative-rentcafe-tabs .ui-tabs-panel h2 {
+  margin-top: 0;
+}
+
+.herocreative-rentcafe-tabs ul li {
+  margin: 0 1em 0 0;
+  list-style: none;
+  text-decoration: none;
+  font-color: inherit;
+}
+
+.herocreative-rentcafe-tabs ul a,
+.herocreative-rentcafe-tabs ul a:visited,
+.herocreative-rentcafe-tabs ul a:focus {
+  display: block;
+  padding: .7em;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+.herocreative-rentcafe-tabs .ui-state-default {
+  background-color: #E0DFD8;
+  border-right: 1px solid gray;
+}
+
+.herocreative-rentcafe-tabs .floorplan-img img {
+  width: 50%;
+  height: auto;
+}
+
+.herocreative-rentcafe-tabs table {
+  float: left;
+  width: 45%;
+  margin-right: 1em;
+}
+
+.herocreative-rentcafe-tabs .ui-tabs-active {
+  background-color: inherit;
+
+  border-color: gray;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-right: 0;
+
+  border-radius: 2px 0 0 2px;
+}
+
+/* Admin styles */
+
+.settings_page_herocreative-rentcafe .herocreative-rentcafe-tabs,
+.settings_page_herocreative-rentcafe .error {
+  padding: 10px;
+}
+
+.settings_page_herocreative-rentcafe .json-feed {
+  word-wrap: break-word;
+}
+
+.settings_page_herocreative-rentcafe .shortcode-box {
+  margin: 20px;
+}
+
+/*  SECTIONS  */
+.herocreative-rentcafe-tabs .section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.herocreative-rentcafe-tabs .col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+.herocreative-rentcafe-tabs .col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.herocreative-rentcafe-tabs .group:before,
+.herocreative-rentcafe-tabs .group:after { content:""; display:table; }
+.herocreative-rentcafe-tabs .group:after { clear:both;}
+.herocreative-rentcafe-tabs .group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.herocreative-rentcafe-tabs .span_2_of_2 {
+  width: 65%;
+}
+.herocreative-rentcafe-tabs .span_1_of_2 {
+  width: 30.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 700 PIXELS */
+
+@media only screen and (max-width: 700px) {
+
+  /* Grid styles */
+
+  .herocreative-rentcafe-tabs .col { margin: 1% 0 1% 0%; }
+
+  .herocreative-rentcafe-tabs .span_2_of_2,
+  .herocreative-rentcafe-tabs .span_1_of_2 { width: 100%; }
+
+  /* Plugin styles */
+
+  .herocreative-rentcafe-tabs .ui-state-default {
+    background-color: #E0DFD8;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+  }
+
+  .herocreative-rentcafe-tabs .ui-state-default:last-child {
+    border-bottom: 1px solid gray;
+  }
+
+  .herocreative-rentcafe-tabs .ui-tabs-active {
+    background-color: inherit;
+    border-bottom: none;
+  }
+
+  .herocreative-rentcafe-tabs .herocreative-rentcafe-tabs table,
+  .herocreative-rentcafe-tabs .floorplan-img img {
+    width: 100%;
+  }
+}
